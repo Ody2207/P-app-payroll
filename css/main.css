@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  height: 100vh;
+  background-color: #1C2833;
+}
+.nav-links .name-title {
+  display: flex;
+  background-color: #162029;
+  width: 70%;
+  height: 70px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.nav-links .name-title h2 {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+.nav-links .section-links {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.nav-links .section-links .here {
+  color: #00EE94;
+  background-color: #162029;
+}
+.nav-links .section-links span {
+  width: 30px;
+  height: 30px;
+  margin: 0 20px 0 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav-links .section-links .item-1 {
+  background-image: url(../assets/svg/home-white.svg);
+}
+.nav-links .section-links .item-2 {
+  background-image: url(../assets/svg/folder-white.svg);
+}
+.nav-links .section-links .item-3 {
+  background-image: url(../assets/svg/trending-white.svg);
+}
+.nav-links .section-links .item-4 {
+  background-image: url(../assets/svg/coin-green.svg);
+}
+.nav-links .section-links .item-5 {
+  background-image: url(../assets/svg/img-white.svg);
+}
+.nav-links .section-links a {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  margin-top: 20px;
+  height: 60px;
+  align-items: center;
+  border-radius: 10px;
+}
+.nav-links .section-links a img {
+  width: 30px;
+  margin: 0 20px 0 20px;
+}
+.nav-links .section-links:hover ~ .item-1 {
+  background-image: url("../assets/svg/home-green.svg");
+}
+.nav-links .section-links a:hover {
+  background-color: #162029;
+}
+
+.container-app {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100vh;
+  background-color: #EEEEEE;
+}
+.container-app .header {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  background-color: #fff;
+  padding: 0 50px 0 50px;
+}
+.container-app .header .header-action {
+  display: flex;
+  justify-self: left;
+  align-items: center;
+  width: 50%;
+}
+.container-app .header .header-action img {
+  width: 40px;
+  margin-right: 10px;
+}
+.container-app .header .header-perfil {
+  display: flex;
+  width: 50%;
+  justify-content: right;
+  align-items: center;
+}
+.container-app .header .header-perfil p {
+  font-size: 25px;
+  font-weight: lighter;
+}
+.container-app .header .header-perfil span {
+  color: red;
+  font-size: 18px;
+  margin-right: 5px;
+}
+.container-app .header .header-perfil img {
+  width: 60px;
+  margin-left: 10px;
+}
+.container-app .container-info {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+}
+.container-app .container-info .container-workers {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+.container-app .container-info .container-workers .workers {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.container-app .container-info .container-workers .workers .workers-header-1 {
+  margin-top: 25px;
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+  border-bottom: 1px solid #162029;
+}
+.container-app .container-info .container-workers .workers .workers-header-1 h2 {
+  width: 50%;
+  font-size: 30px;
+  text-align: left;
+}
+.container-app .container-info .container-workers .workers .workers-header-1 .shearch {
+  justify-content: right;
+  display: flex;
+  width: 50%;
+}
+.container-app .container-info .container-workers .workers .workers-header-1 .shearch div {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 5vh;
+  background-color: #D6D6D6;
+  border-radius: 10px;
+}
+.container-app .container-info .container-workers .workers .workers-header-1 .shearch p {
+  margin-left: 10px;
+}
+.container-app .container-info .container-workers .workers .workers-header-1 .shearch img {
+  margin-left: 110px;
+  width: 15px;
+}
+.container-app .container-info .container-workers .workers .workers-header-2 {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.container-app .container-info .container-workers .workers .workers-header-2 .header-item1 {
+  display: flex;
+  justify-content: left;
+  width: 50%;
+}
+.container-app .container-info .container-workers .workers .workers-header-2 .header-item1 .item-1 {
+  display: flex;
+  height: 40px;
+  width: 150px;
+  justify-content: left;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.container-app .container-info .container-workers .workers .workers-header-2 .header-item1 .item-1 p {
+  margin: 0 55px 0 15px;
+}
+.container-app .container-info .container-workers .workers .workers-header-2 .header-item-2 {
+  display: flex;
+  justify-content: right;
+  width: 50%;
+}
+.container-app .container-info .container-workers .workers .workers-header-2 .header-item-2 .item-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #D6D6D6;
+}
+.container-app .container-info .container-workers .workers .workers-header-2 .header-item-2 .item-2 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 40px;
+  height: 30px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+.container-app .container-info .container-workers .workers .workers {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow-y: auto;
+}
+.container-app .container-info .container-workers .workers .workers .workers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  padding: 40px 10px;
+  border-radius: 10px;
+}
+.container-app .container-info .container-workers .workers .workers .workers-container img {
+  width: 120px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+.container-app .container-info .container-workers .workers .workers .workers-container div {
+  display: flex;
+}
+.container-app .container-info .container-workers .workers .workers .workers-container div img {
+  margin-top: 20px;
+  width: 20px;
+}
+.container-app .container-info .container-graphics {
+  width: 30%;
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=main.css.map */

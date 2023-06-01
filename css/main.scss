@@ -1,0 +1,323 @@
+$blue-black: #1C2833;
+$super-blue-black: #162029;
+$grey: #EEEEEE;
+$super-grey: #D6D6D6;
+$white: #fff;
+$green: #00EE94;
+$ligth-green: #C1FFF0;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 100vh;
+    background-color: $blue-black;
+
+    .name-title {
+        display: flex;
+        background-color: $super-blue-black;
+        width: 70%;
+        height: 70px;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+
+        h2 {
+            color: $white;
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px; 
+            
+        }
+    }
+
+    .section-links {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+
+        .here {
+            color: $green;
+            background-color: $super-blue-black;
+        }
+
+        span {
+            width: 30px;
+            height: 30px;
+            margin: 0 20px 0 20px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .item-1 {
+            background-image: url(../assets/svg/home-white.svg);
+        }
+
+        // .item-1:hover {
+        //     background-image: url(../assets/svg/home-green.svg);
+        // }
+        .item-2 {
+            background-image: url(../assets/svg/folder-white.svg);
+        }
+        .item-3 {
+            background-image: url(../assets/svg/trending-white.svg);
+        }
+        .item-4 {
+            background-image: url(../assets/svg/coin-green.svg);
+        }
+        .item-5 {
+            background-image: url(../assets/svg/img-white.svg);
+        }
+        
+        a {
+            display: flex;
+            color: $white;
+            text-decoration: none;
+            font-size: 25px;
+            margin-top: 20px;
+            height: 60px;
+            align-items: center;
+            border-radius: 10px;
+
+            img {
+                width: 30px;
+                margin: 0 20px 0 20px;
+            }
+        }
+
+        &:hover ~ .item-1 {
+            background-image: url('../assets/svg/home-green.svg');
+        }
+        
+
+        a:hover {
+            background-color: $super-blue-black;
+        }
+
+        
+    }
+}
+
+.container-app {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+    background-color: $grey;
+
+    .header {
+        width: 100%;
+        height: 12vh;
+        display: flex;
+        background-color: $white;
+        padding: 0 50px 0 50px;
+
+        .header-action {
+            display: flex;
+            justify-self: left;
+            align-items: center;
+            width: 50%;
+
+            img {
+                width: 40px;
+                margin-right: 10px;
+            }
+        }
+
+        .header-perfil {
+            display: flex;
+            width: 50%;
+            justify-content: right;
+            align-items: center;
+
+            p {
+                font-size: 25px;
+                font-weight: lighter;
+            }
+
+            span {
+                color: red;
+                font-size: 18px;
+                margin-right: 5px;
+            }
+
+            img {
+                width: 60px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .container-info {
+        display: flex;
+        width: 100%;
+        height: 90vh;
+
+        .container-workers {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+
+            .workers {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+
+                .workers-header-1 {
+                    margin-top: 25px;
+                    display: flex;
+                    width: 100%;
+                    height: 10vh;
+                    align-items: center;
+                    border-bottom: 1px solid $super-blue-black;
+    
+                    h2 {
+                        width: 50%;
+                        font-size: 30px;
+                        text-align: left;
+                    }
+    
+                    .shearch {
+                        justify-content: right;
+                        display: flex;
+                        width: 50%;
+    
+                        div {
+                            display: flex;
+                            align-items: center;
+                            width: 200px;
+                            height: 5vh;
+                            background-color: $super-grey;
+                            border-radius: 10px;
+                        }
+    
+                        p {
+                            margin-left: 10px;
+                        }
+    
+                        img {
+                            margin-left: 110px;
+                            width: 15px;
+                        }
+                    }
+                }
+    
+                .workers-header-2 {
+                    width: 100%;
+                    height: 10vh;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+
+                    .header-item1 {
+                        display: flex;
+                        justify-content: left;
+                        width: 50%;
+
+                        .item-1 {
+                            display: flex;
+                            height: 40px;
+                            width: 150px;
+                            justify-content: left;
+                            align-items: center;
+                            background-color: $white;
+                            border-radius: 5px;
+
+                            p {
+                                margin: 0 55px 0 15px;
+                            }
+                        }
+                    }
+
+                    .header-item-2 {
+                        display: flex;
+                        justify-content: right;
+                        width: 50%;
+
+                        .item-2 {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 90px;
+                            height: 40px;
+                            border-radius: 10px;
+                            background-color: $super-grey;
+
+
+                            div{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: $white;
+                                width: 40px;
+                                height: 30px;
+                                margin-left: 5px;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+
+                    
+                }
+
+                .workers {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: auto;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    overflow-y: auto;
+                    
+                    .workers-container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        background-color: $white;
+                        padding: 40px 10px;
+                        border-radius: 10px;
+                        
+                        img {
+                            width: 120px;
+                            border-radius: 100%;
+                            margin-bottom: 10px;
+                        }
+
+                        div {
+                            display: flex;
+
+                            img {
+                                margin-top: 20px;
+                                width: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            
+        }
+
+        .container-graphics {
+            width: 30%;
+            background-color: $white;
+        }
+    }
+}
